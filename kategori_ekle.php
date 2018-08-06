@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Liste</title>
+	<title>Kategori Ekleme</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- SAYFAYI MOBİL UYUMLU HALE GETİRİR-->
 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"> <!-- CSS DOSYLARI TANIMLANIR-->
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css"> <!-- CSS DOSYLARI TANIMLANIR-->
 </head>
 <body>
-<?php 
-include 'navbar.php'
- ?>
 
  <div class="jumbotron">
-  <h1 class="display-6">Yeni Ekleme Formu!</h1>
-<form action="yenikayit.php" method="post">
+  <h1 class="display-4">Yeni Kategori Ekleme !</h1>
+<form action="kayit.php" method="post">
   <div class="form-group">
-    <label for="baslik">Başlık</label>
-    <input type="text" name="baslik" class="form-control" id="baslik" placeholder="Başlık Giriniz">
+    <label for="baslik">Kategori Adı</label>
+    <input type="text" name="kategori_adi" class="form-control" id="kategori_adi" placeholder="Kategori Giriniz">
   </div>
 
   <div class="form-group">
-    <label for="aciklama">Açıklama</label>
-    <textarea name="aciklama" class="form-control" id="aciklama" rows="3" placeholder="Açıklama Giriniz.."></textarea>
-  </div>
-    <div class="form-group">
-    <label for="tarih">Tarih</label>
-    <input type="date" name="tarih" class="form-control" id="tarih">
+    <label for="aciklama">Kategori Sırası</label>
+    <input type="text" name="kategori_sira" class="form-control" id="kategori_sira" placeholder="Sıra Numarası Giriniz.">
   </div>
   <button type="submit" name="kayit" class="btn btn-danger">KAYIT YAP</button>
 </form>
